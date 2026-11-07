@@ -1,0 +1,85 @@
+.insights {
+  display: grid;
+  gap: 12px;
+}
+
+.insight {
+  --insight-accent: var(--info);
+  --insight-soft: var(--info-soft);
+  --insight-text: var(--info-text);
+
+  display: flex;
+  gap: 14px;
+  padding: 16px 18px;
+  border-radius: var(--radius);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--insight-accent);
+}
+
+.insight--critical {
+  --insight-accent: var(--red-500);
+  --insight-soft: var(--red-50);
+  --insight-text: var(--red-700);
+}
+
+.insight--warning {
+  --insight-accent: var(--amber-500);
+  --insight-soft: var(--amber-50);
+  --insight-text: var(--amber-700);
+}
+
+.insight--positive {
+  --insight-accent: var(--green-500);
+  --insight-soft: var(--green-50);
+  --insight-text: var(--green-700);
+}
+
+.insight--info {
+  --insight-accent: var(--gray-400);
+  --insight-soft: var(--gray-100);
+  --insight-text: var(--gray-600);
+}
+
+.insight__icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--insight-soft);
+  color: var(--insight-text);
+}
+
+.insight__icon svg {
+  width: 19px;
+  height: 19px;
+}
+
+.insight__body {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.insight__tag {
+  color: var(--insight-text);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.insight__title {
+  font-size: 0.9375rem;
+  font-weight: 680;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+}
+
+.insight__message {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+}

@@ -1,0 +1,133 @@
+/* ==========================================================================
+   CADÊ? — Tokens de design
+   ========================================================================== */
+
+:root {
+  /* Marca */
+  --navy-950: #0a111e;
+  --navy-900: #101827;
+  --navy-800: #1e293b;
+  --navy-700: #334155;
+  --navy-600: #475569;
+
+  --green-300: #86efac;
+  --green-400: #4ade80;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+  --green-700: #15803d;
+  --green-100: #dcfce7;
+  --green-50: #f0fdf4;
+
+  --red-400: #f87171;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --red-700: #b91c1c;
+  --red-100: #fee2e2;
+  --red-50: #fef2f2;
+
+  --amber-500: #f59e0b;
+  --amber-600: #d97706;
+  --amber-700: #b45309;
+  --amber-100: #fef3c7;
+  --amber-50: #fffbeb;
+
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+  --blue-100: #dbeafe;
+  --blue-50: #eff6ff;
+
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-150: #e9eef4;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --white: #ffffff;
+
+  /* Papéis */
+  --bg: var(--gray-100);
+  --surface: var(--white);
+  --surface-muted: var(--gray-50);
+  --surface-inverse: var(--navy-900);
+  --border: var(--gray-200);
+  --border-strong: var(--gray-300);
+
+  --text: var(--navy-900);
+  --text-secondary: var(--gray-600);
+  --text-muted: var(--gray-500);
+  --text-inverse: var(--white);
+  --text-inverse-muted: #a7b4c7;
+
+  --accent: var(--green-500);
+  --accent-hover: var(--green-600);
+  --accent-text: var(--green-700);
+  --accent-soft: var(--green-50);
+
+  --positive: var(--green-600);
+  --positive-text: var(--green-700);
+  --positive-soft: var(--green-50);
+  --negative: var(--red-500);
+  --negative-text: var(--red-600);
+  --negative-soft: var(--red-50);
+  --warning: var(--amber-500);
+  --warning-text: var(--amber-700);
+  --warning-soft: var(--amber-50);
+  --info: var(--blue-600);
+  --info-text: var(--blue-700);
+  --info-soft: var(--blue-50);
+
+  /* Gráficos (paleta validada para daltonismo — ver README) */
+  --chart-revenue: #334155;
+  --chart-variable: #eb6834;
+  --chart-fixed: #2a78d6;
+  --chart-withdrawal: #e87ba4;
+  --chart-surplus: #16a34a;
+  --chart-deficit: #dc2626;
+  --chart-grid: #e9eef4;
+  --chart-axis: #cbd5e1;
+
+  /* Forma */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-full: 999px;
+
+  --shadow-xs: 0 1px 2px rgb(16 24 39 / 0.05);
+  --shadow-sm: 0 1px 3px rgb(16 24 39 / 0.06), 0 1px 2px rgb(16 24 39 / 0.04);
+  --shadow-md: 0 10px 28px -12px rgb(16 24 39 / 0.18), 0 2px 6px rgb(16 24 39 / 0.05);
+  --shadow-lg: 0 28px 56px -20px rgb(16 24 39 / 0.35);
+  --ring: 0 0 0 3px rgb(34 197 94 / 0.45);
+
+  /* Tipografia */
+  --font-sans: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.0625rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+
+  /* Movimento */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 140ms;
+  --duration: 200ms;
+  --duration-slow: 420ms;
+
+  /* Layout */
+  --container: 1180px;
+  --container-narrow: 780px;
+  --gutter: 20px;
+  --header-h: 64px;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --gutter: 16px;
+  }
+}

@@ -1,0 +1,35 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-mark {
+  flex: none;
+  filter: drop-shadow(0 4px 10px rgb(34 197 94 / 0.25));
+}
+
+.logo__wordmark {
+  font-size: 1.3rem;
+  font-weight: 850;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.logo--dark .logo__wordmark {
+  color: var(--navy-900);
+}
+
+.logo--light .logo__wordmark {
+  color: var(--white);
+}
+
+.logo__question {
+  color: var(--green-500);
+  margin-left: 1px;
+}
+
+.logo--dark .logo__question {
+  color: var(--green-600);
+}

@@ -1,0 +1,146 @@
+.btn {
+  --btn-bg: var(--accent);
+  --btn-bg-hover: var(--accent-hover);
+  --btn-fg: var(--navy-900);
+  --btn-border: transparent;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid var(--btn-border);
+  border-radius: var(--radius-sm);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-weight: 650;
+  font-size: var(--text-sm);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background-color var(--duration) var(--ease-out),
+    border-color var(--duration) var(--ease-out),
+    color var(--duration) var(--ease-out),
+    box-shadow var(--duration) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out);
+}
+
+.btn svg {
+  flex: none;
+  width: 18px;
+  height: 18px;
+}
+
+.btn:hover {
+  background: var(--btn-bg-hover);
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(1px) scale(0.99);
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: var(--ring);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.btn--full {
+  width: 100%;
+}
+
+/* Tamanhos */
+.btn--sm {
+  min-height: 36px;
+  padding: 0 12px;
+  font-size: 0.8125rem;
+  border-radius: var(--radius-xs);
+}
+
+.btn--sm svg {
+  width: 16px;
+  height: 16px;
+}
+
+.btn--lg {
+  min-height: 52px;
+  padding: 0 24px;
+  font-size: var(--text-base);
+  border-radius: var(--radius);
+}
+
+.btn--lg svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Variantes */
+.btn--primary {
+  box-shadow:
+    0 1px 0 rgb(255 255 255 / 0.35) inset,
+    0 6px 18px -8px rgb(34 197 94 / 0.7);
+}
+
+.btn--primary:hover {
+  box-shadow:
+    0 1px 0 rgb(255 255 255 / 0.3) inset,
+    0 10px 24px -10px rgb(22 163 74 / 0.8);
+}
+
+.btn--secondary {
+  --btn-bg: var(--white);
+  --btn-bg-hover: var(--gray-50);
+  --btn-fg: var(--navy-900);
+  --btn-border: var(--border-strong);
+  box-shadow: var(--shadow-xs);
+}
+
+.btn--secondary:hover {
+  border-color: var(--gray-400);
+}
+
+.btn--ghost {
+  --btn-bg: transparent;
+  --btn-bg-hover: var(--gray-100);
+  --btn-fg: var(--navy-800);
+}
+
+.btn--danger {
+  --btn-bg: var(--red-600);
+  --btn-bg-hover: var(--red-700);
+  --btn-fg: var(--white);
+}
+
+.btn--dark {
+  --btn-bg: var(--navy-900);
+  --btn-bg-hover: var(--navy-800);
+  --btn-fg: var(--white);
+}
+
+.btn--outline-light {
+  --btn-bg: rgb(255 255 255 / 0.04);
+  --btn-bg-hover: rgb(255 255 255 / 0.1);
+  --btn-fg: var(--white);
+  --btn-border: rgb(255 255 255 / 0.22);
+}
+
+/* Carregando */
+.btn__spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  animation: spin 0.7s linear infinite;
+}

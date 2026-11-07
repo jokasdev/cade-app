@@ -1,0 +1,105 @@
+.legal__header {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.legal__updated {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+}
+
+.legal__intro {
+  padding: 18px 20px;
+  border-radius: var(--radius);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--green-500);
+  color: var(--text-secondary);
+  font-size: var(--text-md);
+}
+
+.legal__intro strong {
+  color: var(--navy-900);
+}
+
+.legal__content {
+  display: grid;
+  gap: 14px;
+  padding: 36px 40px;
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+@media (max-width: 560px) {
+  .legal__content {
+    padding: 24px 20px;
+  }
+}
+
+.legal__content h2 {
+  margin-top: 14px;
+  color: var(--navy-900);
+  font-size: 1.15rem;
+  letter-spacing: -0.015em;
+}
+
+.legal__content h2:first-child {
+  margin-top: 0;
+}
+
+.legal__content ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.legal__cta {
+  margin-top: 12px;
+}
+
+.formula-table {
+  display: grid;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.formula-table__row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 12px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: var(--text-sm);
+}
+
+.formula-table__row:last-child {
+  border-bottom: 0;
+}
+
+.formula-table__row:nth-child(odd) {
+  background: var(--gray-50);
+}
+
+.formula-table__name {
+  color: var(--navy-900);
+  font-weight: 620;
+}
+
+.formula-table__formula {
+  font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+  font-size: 0.8125rem;
+  color: var(--navy-800);
+}
+
+@media (max-width: 560px) {
+  .formula-table__row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
+}
